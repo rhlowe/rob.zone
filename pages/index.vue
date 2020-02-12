@@ -7,7 +7,7 @@
     </header>
 
     <main>
-      <article>
+      <article id="about">
         <section>
           <h2>About Me</h2>
           <p>
@@ -16,35 +16,35 @@
         </section>
       </article>
 
-      <article>
+      <article id="social">
         <section>
           <h2>Social</h2>
 
           <ul class="flex-list">
             <li>
               <a href="https://www.linkedin.com/in/roberthenrylowe/">
-                <img src="linkedin.svg" alt="LinkedIn" class="svg-img" />
+                <img src="social/linkedin.svg" alt="LinkedIn" class="svg-img" />
                 <span>in/roberthenrylowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://twitter.com/rhlowe">
-                <img src="twitter.svg" alt="Twitter" class="svg-img" />
+                <img src="social/twitter.svg" alt="Twitter" class="svg-img" />
                 <span>@rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://github.com/rhlowe">
-                <img src="github.svg" alt="Github" class="svg-img" />
+                <img src="social/github.svg" alt="Github" class="svg-img" />
                 <span>rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="mailto:rhlowe@gmail.com">
-                <img src="email.svg" alt="Email" class="svg-img" />
+                <img src="social/email.svg" alt="Email" class="svg-img" />
                 <span>rhlowe@gmail.com</span>
               </a>
             </li>
@@ -56,19 +56,29 @@
         </section>
       </article>
 
-      <article>
+      <article id="skills">
         <section>
           <h2>Skills</h2>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ember</li>
+            <li>Vue</li>
+            <li>React</li>
+            <li>Accessibility</li>
+          </ul>
         </section>
       </article>
 
-      <article>
+      <article id="resume">
         <section>
           <h2>Resume</h2>
         </section>
       </article>
 
-      <article>
+      <article id="contact">
         <section>
           <h2>Contact Me</h2>
         </section>
