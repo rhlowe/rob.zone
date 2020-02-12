@@ -1,5 +1,7 @@
 {
   "semi": false,
   "arrowParens": "always",
-  "singleQuote": true
+  "singleQuote": true,
+  "proseWrap": "never",
+  "printWidth": 1000
 }
