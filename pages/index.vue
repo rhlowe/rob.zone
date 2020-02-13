@@ -1,13 +1,13 @@
 <template>
   <div>
-    <header>
+    <header class="bg-v t-w">
       <section>
         <h1>Rob Lowe</h1>
       </section>
     </header>
 
     <main>
-      <article id="intro">
+      <article id="intro" class="bg-v t-w">
         <section>
           <picture>
             <source srcset="photos/headshot.jpg" media="(min-width: 363px)" />
@@ -21,9 +21,7 @@
       <article id="about">
         <section>
           <h2>About Me</h2>
-          <p>
-            I am an experienced Senior Front-end Developer with deep understanding of HTML, CSS, and JavaScript and broad experience with the full software development life-cycle. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.
-          </p>
+          <p>I am an experienced Senior Front-end Developer with deep understanding of <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with full-stack software development life cycles. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
         </section>
       </article>
 
@@ -109,7 +107,7 @@ article,
 footer,
 header {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 100ex) 1fr;
+  grid-template-columns: 1fr minmax(auto, 80ex) 1fr;
   grid-gap: 1rem;
 }
 
@@ -143,6 +141,22 @@ header section {
 picture img,
 picture source {
   max-width: 100%;
+}
+
+#intro {
+}
+
+#intro aside {
+}
+
+#intro picture {
+  display: block;
+}
+
+@media screen and (min-width: 363px) {
+  #intro picture {
+    max-width: 45%;
+  }
 }
 
 .svg-img {

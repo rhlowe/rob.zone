@@ -27,5 +27,39 @@ body {
 
 body {
   background-color: var(--white);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.bg-b {
+  background-color: var(--black);
+}
+.bg-g {
+  background-color: var(--green);
+}
+.bg-r {
+  background-color: var(--red);
+}
+.bg-v {
+  background-color: var(--violet);
+}
+.bg-w {
+  background-color: var(--white);
+}
+
+.t-b {
+  color: var(--black);
+}
+.t-g {
+  color: var(--green);
+}
+.t-r {
+  color: var(--red);
+}
+.t-v {
+  color: var(--violet);
+}
+.t-w {
+  color: var(--white);
 }
 </style>
