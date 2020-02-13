@@ -7,6 +7,17 @@
     </header>
 
     <main>
+      <article id="intro">
+        <section>
+          <picture>
+            <source srcset="photos/headshot.jpg" media="(min-width: 363px)" />
+            <source srcset="photos/headshot@0.5x.jpg" />
+            <img src="photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." />
+          </picture>
+          <aside>My name is Rob, and I like to party.</aside>
+        </section>
+      </article>
+
       <article id="about">
         <section>
           <h2>About Me</h2>
@@ -87,13 +98,27 @@
 
     <footer>
       <section>
-        <p class="text-center">This site made in 2020 with Nuxt.js and hosted on</p>
+        <p class="text-center">Copyright © Me, Forever.</p>
       </section>
     </footer>
   </div>
 </template>
 
 <style>
+article,
+footer,
+header {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 100ex) 1fr;
+  grid-gap: 1rem;
+}
+
+article section,
+footer section,
+header section {
+  grid-column: 2 / 3;
+}
+
 .flex-list {
   display: flex;
   flex-wrap: wrap;
@@ -115,18 +140,9 @@
   margin-left: 1ex;
 }
 
-footer,
-header,
-article {
-  display: grid;
-  grid-template-columns: 1fr minmax(auto, 100ex) 1fr;
-  grid-gap: 1rem;
-}
-
-footer section,
-header section,
-article section {
-  grid-column: 2 / 3;
+picture img,
+picture source {
+  max-width: 100%;
 }
 
 .svg-img {
