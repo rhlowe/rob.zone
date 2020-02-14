@@ -21,7 +21,7 @@
       <article id="about">
         <section>
           <h2>About Me</h2>
-          <p>I am an experienced Senior Front-end Developer with deep understanding of <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with full-stack software development life cycles. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
+          <p>My pronouns are <em>he</em>, <em>him</em>, and <em>his</em>. I am an experienced Senior Front-end Developer with deep understanding of <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with full-stack software development life cycles. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
         </section>
       </article>
 
@@ -103,6 +103,7 @@
 </template>
 
 <style>
+/* Tags */
 article,
 footer,
 header {
@@ -116,6 +117,18 @@ footer section,
 header section {
   grid-column: 2 / 3;
 }
+
+header h1 {
+  font-size: 4.5rem;
+  margin: -1rem 0 0;
+}
+
+picture img,
+picture source {
+  max-width: 100%;
+}
+
+/* Classes */
 
 .flex-list {
   display: flex;
@@ -138,27 +151,6 @@ header section {
   margin-left: 1ex;
 }
 
-picture img,
-picture source {
-  max-width: 100%;
-}
-
-#intro {
-}
-
-#intro aside {
-}
-
-#intro picture {
-  display: block;
-}
-
-@media screen and (min-width: 363px) {
-  #intro picture {
-    max-width: 45%;
-  }
-}
-
 .svg-img {
   height: 32px;
   width: 32px;
@@ -166,5 +158,52 @@ picture source {
 
 .text-center {
   text-align: center;
+}
+
+/* IDs */
+
+#intro {
+}
+
+#intro aside {
+  background-color: rgba(0, 0, 0, 0.33);
+  font-size: 10vw;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  line-height: 1.25;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) {
+  #intro aside {
+    font-size: 2.25rem;
+    grid-column: 1 / 3;
+  }
+}
+
+#intro picture {
+  display: block;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+@media screen and (min-width: 481px) {
+  #intro picture {
+    grid-column: 2 / 4;
+  }
+}
+
+#intro section {
+  align-items: flex-end;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+@media screen and (min-width: 481px) {
+  #intro section {
+    align-items: center;
+    grid-template-columns: 45% auto 45%;
+  }
 }
 </style>
