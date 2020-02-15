@@ -32,34 +32,34 @@
           <ul class="flex-list">
             <li>
               <a href="https://www.linkedin.com/in/roberthenrylowe/">
-                <img src="social/linkedin.svg" alt="LinkedIn" class="svg-img" />
+                <img src="social/minified/linkedin.svg" alt="LinkedIn" class="svg-img" />
                 <span>in/roberthenrylowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://twitter.com/rhlowe">
-                <img src="social/twitter.svg" alt="Twitter" class="svg-img" />
+                <img src="social/minified/twitter.svg" alt="Twitter" class="svg-img" />
                 <span>@rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://github.com/rhlowe">
-                <img src="social/github.svg" alt="Github" class="svg-img" />
+                <img src="social/minified/github.svg" alt="Github" class="svg-img" />
                 <span>rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="mailto:rhlowe@gmail.com">
-                <img src="social/email.svg" alt="Email" class="svg-img" />
+                <img src="social/minified/email.svg" alt="Email" class="svg-img" />
                 <span>rhlowe@gmail.com</span>
               </a>
             </li>
           </ul>
 
-          <p class="text-center">
+          <p class="ta-c">
             <em>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></em>
           </p>
         </section>
@@ -70,13 +70,13 @@
           <h2>Skills</h2>
 
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Ember</li>
-            <li>Vue</li>
-            <li>React</li>
-            <li>Accessibility</li>
+            <li><img src="logos/minified/HTML5_logo_and_wordmark.svg" alt="HTML5 logo and wordmark" loading="lazy" /></li>
+            <li><img src="logos/minified/CSS3_logo_and_wordmark.svg" alt="CSS3 logo and wordmark" loading="lazy" /></li>
+            <li><img src="logos/minified/JavaScript-logo.png" alt="JavaScript logo" loading="lazy" /></li>
+            <li><img src="logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
+            <li><img src="logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
+            <li><img src="logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
+            <li><img src="logos/minified/a11y-logo-hero.svg" alt="Accessibility" loading="lazy" /></li>
           </ul>
         </section>
       </article>
@@ -96,7 +96,7 @@
 
     <footer>
       <section>
-        <p class="text-center">Copyright © Me, Forever.</p>
+        <p class="ta-c">Copyright © Me, Forever.</p>
       </section>
     </footer>
   </div>

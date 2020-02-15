@@ -1,0 +1,16 @@
+#skills {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    li {
+        flex: 1 0 60px;
+        list-style: none;
+    }
+
+    img {
+        width: 100%;
+    }
+}
