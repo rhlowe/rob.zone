@@ -10,9 +10,9 @@
       <article id="intro" class="bg-v t-w">
         <section>
           <picture>
-            <source srcset="photos/headshot.jpg" media="(min-width: 363px)" />
-            <source srcset="photos/headshot@0.5x.jpg" />
-            <img src="photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." />
+            <source srcset="photos/minified/headshot.jpg" media="(min-width: 363px)" />
+            <source srcset="photos/minified/headshot@0.5x.jpg" />
+            <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." />
           </picture>
           <aside>My name is Rob, and I like to party.</aside>
         </section>

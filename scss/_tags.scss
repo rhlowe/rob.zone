@@ -32,10 +32,10 @@ header h1 {
     margin: -1rem 0 0;
 }
 
-picture {
-    img,
-    source {
-        display: block;
-        max-width: 100%;
-    }
+img,
+source {
+    display: block;
+    max-width: 100%;
 }
+
+picture {}
