@@ -1,4 +1,8 @@
 #intro {
+    @media screen and (max-width: 481px) {
+        grid-gap: 0;
+    }
+
     aside {
         background-color: rgba(0, 0, 0, 0.33);
         font-size: 10vw;

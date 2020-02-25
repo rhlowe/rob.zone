@@ -1,12 +1,17 @@
 #skills {
     ul {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
         padding: 0;
+
+        @media screen and (min-width: 481px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 
     li {
-        flex: 1 0 60px;
+        align-self: end;
         list-style: none;
     }
 
