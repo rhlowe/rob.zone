@@ -4,6 +4,7 @@
 @import '../scss/sections/about';
 @import '../scss/sections/contact';
 @import '../scss/sections/intro';
+@import '../scss/sections/nav';
 @import '../scss/sections/resume';
 @import '../scss/sections/skills';
 @import '../scss/sections/social';
@@ -18,10 +19,18 @@
 */
 :root {
     --black: #000000;
-    --green: #3cf4b5;
-    --red: #ff3366;
-    --violet: #503a53;
-    --white: #f4f4f9;
+    // --white: #f4f4f9;
+
+    --trendy_pink: #9B60A1;
+    --barley_white: #FFF2CC;
+    --voodoo: #523B54;
+    --cutty_sark: #51877A;
+    --patina: #68A193;
+
+    --white: var(--barley_white);
+    --violet: var(--voodoo);
+    --green: var(--cutty_sark);
+    --pink: var(--trendy_pink);
 }
 
 .flex-list {

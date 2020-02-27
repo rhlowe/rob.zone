@@ -1,0 +1,23 @@
+#navigation {
+    ul {
+        display: grid;
+        grid-column: 2 / 3;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(5, auto);
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    a {
+        color: var(--white);
+        display: block;
+        line-height: 3;
+        text-decoration: none;
+    }
+}
