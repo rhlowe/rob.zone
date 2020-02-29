@@ -31,7 +31,7 @@
       <article id="about">
         <section>
           <h2>About Me</h2>
-          <p>I am an experienced Senior Front-end Developer with deep understanding of <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with full-stack software development life cycles. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
+          <p>I am an experienced Senior Front-end Developer with deep understanding of Accessibility, <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with the full-stack software development life cycle. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
           <p>My preferred pronouns are <em>he</em>, <em>him</em>, and <em>his</em>.</p>
         </section>
       </article>
@@ -71,7 +71,9 @@
           </ul>
 
           <p class="ta-c">
-            <em>Icons provided by <a href="https://www.flaticon.com/authors/freepik" title="Freepik's author page on www.flaticon.com">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect's author page on www.flaticon.com">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></em>
+            <small
+              ><em>Icons provided by <a href="https://www.flaticon.com/authors/freepik" title="Freepik's author page on www.flaticon.com">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect's author page on www.flaticon.com">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></em></small
+            >
           </p>
         </section>
       </article>
@@ -88,15 +90,19 @@
             <li><img src="logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
             <li><img src="logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
             <li><img src="logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
+            <li><img src="logos/minified/python.svg" alt="Python" loading="lazy" /></li>
+            <li><img src="logos/minified/flask.svg" alt="Flask" loading="lazy" /></li>
           </ul>
         </section>
       </article>
 
       <article id="resume">
-        <section>
+        <section class="h-resume">
           <h2>Resume</h2>
 
           <h3>Work Experience</h3>
+
+          <resume />
 
           <h3>Accomplishments</h3>
 
@@ -105,6 +111,14 @@
           </ul>
 
           <h3>Certifications</h3>
+
+          <h4>Scrum Master Certified (SMC)</h4>
+
+          <ul>
+            <li>
+              <a href="https://www.scrumalliance.org/community/profile/rlowe22"><img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" /> Certified ScrumMaster®</a>
+            </li>
+          </ul>
 
           <h3>Education</h3>
         </section>
@@ -124,3 +138,13 @@
     </footer>
   </div>
 </template>
+
+<script>
+import Resume from '~/components/Resume.vue';
+
+export default {
+  components: {
+    Resume,
+  },
+};
+</script>

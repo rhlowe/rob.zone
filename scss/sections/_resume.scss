@@ -1,0 +1,29 @@
+#resume {
+    li {
+        list-style: none;
+    }
+
+    ol {
+        padding: 0;
+    }
+
+    .p-experience {
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-template-columns: auto auto 1fr auto;
+
+        .duration {
+            grid-column: 4 / 5;
+        }
+
+        // .p-location {}
+
+        .p-name {
+            grid-column: 2 / 3;
+        }
+
+        .p-summary {
+            grid-column: 1 / 5;
+        }
+    }
+}
