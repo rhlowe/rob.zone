@@ -31,7 +31,7 @@
       <article id="about">
         <section>
           <h2>About Me</h2>
-          <p>I am an experienced Senior Front-end Developer with deep understanding of Accessibility, <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with the full-stack software development life cycle. I am passionate about creating beautiful interfaces that are both Accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I strongly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
+          <p>I am an experienced <strong>Front-end Developer</strong> with a deep understanding of Accessibility, <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript and broad experience with the full-stack software development life cycle. I am passionate about creating beautiful interfaces that are both accessible and easy to use. I have achieved success through a combination of my own experience, by teaming up with anyone I can learn from, and a bit of luck. I firmly believe that diversity, equity, and inclusion make every team stronger and actively work to increase those qualities in my workplace.</p>
           <p>My preferred pronouns are <em>he</em>, <em>him</em>, and <em>his</em>.</p>
         </section>
       </article>

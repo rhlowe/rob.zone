@@ -8,22 +8,34 @@
     }
 
     .p-experience {
+        border-bottom: 1px solid var(--violet);
         display: grid;
         grid-column-gap: 1rem;
-        grid-template-columns: auto auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
 
         .duration {
-            grid-column: 4 / 5;
+            grid-column: 1 / 2;
+            @media screen and (min-width: 481px) {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
         }
 
-        // .p-location {}
+        .p-location {
+            grid-column: 1 / 2;
+        }
 
         .p-name {
-            grid-column: 2 / 3;
+            grid-column: 1 / 2;
         }
 
         .p-summary {
-            grid-column: 1 / 5;
+            grid-column: 1 / 4;
+
+            li {
+                list-style: square;
+                margin: .5rem 0;
+            }
         }
     }
 }
