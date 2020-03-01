@@ -24,7 +24,7 @@
             <source srcset="photos/minified/headshot@0.5x.jpg" />
             <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
-          <aside>My name is Rob, and I like to party.</aside>
+          <div>My name is Rob, and I like to party.</div>
         </section>
       </article>
 
@@ -137,11 +137,25 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
+          <form method="POST" name="Contact" data-netlify="true">
+            <label for="Name">Name</label>
+            <input id="Name" type="text" name="Name" />
+
+            <label for="Email">Email Address</label>
+            <input id="Email" type="email" name="Email" />
+
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
+
+            <div>
+              <input type="submit" value="Send" />
+            </div>
+          </form>
         </section>
       </article>
     </main>
 
-    <footer class="bg-p t-w">
+    <footer class="bg-v t-w">
       <section>
         <p class="ta-c">Copyright © Me, Forever.</p>
       </section>

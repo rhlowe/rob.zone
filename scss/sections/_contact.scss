@@ -1,0 +1,13 @@
+#contact {
+    form {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto 1fr;
+        margin: 1rem 0;
+    }
+
+    div {
+        grid-column: 2 / 3;
+        text-align: right;
+    }
+}
