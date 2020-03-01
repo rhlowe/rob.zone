@@ -22,7 +22,7 @@
           <picture>
             <source srcset="photos/minified/headshot.jpg" media="(min-width: 363px)" />
             <source srcset="photos/minified/headshot@0.5x.jpg" />
-            <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="368" width="368" />
+            <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
           <aside>My name is Rob, and I like to party.</aside>
         </section>
@@ -145,6 +145,25 @@ import Resume from '~/components/Resume.vue';
 export default {
   components: {
     Resume,
+  },
+  mounted() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        const element = document.querySelector(`nav a[href="#${id}"]`);
+        console.debug(entry);
+
+        if (entry.intersectionRatio > 0 && element) {
+          document.querySelector(`nav a[href="#${id}"]`).classList.add('active');
+        } else if (entry.intersectionRatio <= 0 && element) {
+          document.querySelector(`nav a[href="#${id}"]`).classList.remove('active');
+        }
+      });
+    });
+
+    document.querySelectorAll('article[id]').forEach((article) => {
+      observer.observe(article);
+    });
   },
 };
 </script>
