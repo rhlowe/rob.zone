@@ -60,7 +60,7 @@ const jobs = [
     url: 'https://www.w2ogroup.com/',
   },
   {
-    accomplishments: ['Developed and taught JavaScript course.'],
+    accomplishments: ['Developed and taught JavaScript course for more than 60 students over 3 sessions.'],
     city: 'Austin',
     company: 'Austin Coding Academy',
     end_date: '2015-11',
@@ -117,7 +117,7 @@ const jobs = [
     role: 'Web Developer',
     start_date: '2005-01',
     state: 'Texas',
-    url: 'https://www.drumroll.com/',
+    url: 'https://fai2.com/',
   },
   {
     accomplishments: [],

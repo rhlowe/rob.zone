@@ -8,9 +8,16 @@
         <span v-else>{{ job.company }}</span>
       </span>
 
-      <span class="duration">
-        (<time class="dt-start" datetime="YYYY-MM">{{ job.start_date }}</time> to <time class="dt-end" datetime="YYYY-MM">{{ job.end_date }}</time
-        >)
+      <span class="duration row1">
+        (
+        <time :datetime="job.start_date" class="dt-start">{{ formatDate(job.start_date) }}</time>
+        to
+        <time :datetime="job.end_date" class="dt-end">{{ formatDate(job.end_date) }}</time
+        >,
+        <em>
+          <time :datetime="PnYnMnDTnHnMnS" class="dt-duration">{{ daysBetweenDates(job.start_date, job.end_date) }}</time>
+        </em>
+        )
       </span>
 
       <ul class="p-summary">
@@ -21,6 +28,7 @@
 </template>
 
 <script>
+import { format, formatDistance, parseISO } from 'date-fns';
 import jobs from 'static/json/jobs';
 
 export default {
@@ -33,6 +41,21 @@ export default {
     jobsReverseSorted() {
       const jobsReverseSorted = [...this.jobs];
       return jobsReverseSorted.sort((a, b) => a.start_date < b.start_date);
+    },
+  },
+  methods: {
+    formatDate(date) {
+      if (date === 'Present') {
+        return date;
+      }
+      return format(parseISO(date), 'MMM yyyy');
+    },
+    daysBetweenDates(start, end) {
+      if (end === 'Present') {
+        const endDate = new Date();
+        return formatDistance(parseISO(start), endDate);
+      }
+      return formatDistance(parseISO(start), parseISO(end));
     },
   },
 };
