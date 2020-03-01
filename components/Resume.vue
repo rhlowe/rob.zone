@@ -15,7 +15,7 @@
         <time :datetime="job.end_date" class="dt-end">{{ formatDate(job.end_date) }}</time
         >,
         <em>
-          <time :datetime="PnYnMnDTnHnMnS" class="dt-duration">{{ daysBetweenDates(job.start_date, job.end_date) }}</time>
+          <time datetime="PnYnMnDTnHnMnS" class="dt-duration">{{ daysBetweenDates(job.start_date, job.end_date) }}</time>
         </em>
         )
       </span>
