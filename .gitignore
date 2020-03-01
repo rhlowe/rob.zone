@@ -90,7 +90,6 @@ sw.*
 *.swp
 
 # Mine
-assets/
 middleware/
 plugins/
 store/

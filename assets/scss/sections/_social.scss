@@ -1,0 +1,26 @@
+#social {
+    li a {
+        font-weight: bold;
+    }
+
+    .flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .flex-list li {
+        list-style: none;
+    }
+
+    .flex-list li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-list li span {
+        margin-left: 1ex;
+    }
+}

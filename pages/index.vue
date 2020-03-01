@@ -157,7 +157,7 @@
 
     <footer class="bg-v t-w">
       <section>
-        <p class="ta-c">Copyright © Me, Forever.</p>
+        <p class="ta-c">Copyright © Rob Lowe, {{ year }}.</p>
       </section>
     </footer>
   </div>
@@ -169,6 +169,11 @@ import Resume from '~/components/Resume.vue';
 export default {
   components: {
     Resume,
+  },
+  computed: {
+    year() {
+      return new Date().getFullYear();
+    },
   },
   mounted() {},
 };

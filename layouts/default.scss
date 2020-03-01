@@ -1,13 +1,14 @@
-@import '../scss/atoms';
-@import '../scss/tags';
+@import '~assets/scss/atoms';
+@import '~assets/scss/fonts';
+@import '~assets/scss/tags';
 
-@import '../scss/sections/about';
-@import '../scss/sections/contact';
-@import '../scss/sections/intro';
-@import '../scss/sections/nav';
-@import '../scss/sections/resume';
-@import '../scss/sections/skills';
-@import '../scss/sections/social';
+@import '~assets/scss/sections/about';
+@import '~assets/scss/sections/contact';
+@import '~assets/scss/sections/intro';
+@import '~assets/scss/sections/nav';
+@import '~assets/scss/sections/resume';
+@import '~assets/scss/sections/skills';
+@import '~assets/scss/sections/social';
 
 /*
     White: #F4F4F9
@@ -31,30 +32,4 @@
     --violet: var(--voodoo);
     --green: var(--cutty_sark);
     --pink: var(--trendy_pink);
-}
-
-.flex-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
-
-.flex-list li {
-    list-style: none;
-}
-
-.flex-list li a {
-    display: flex;
-    align-items: center;
-}
-
-.flex-list li span {
-    margin-left: 1ex;
-}
-
-.svg-img {
-    height: 32px;
-    width: 32px;
 }
