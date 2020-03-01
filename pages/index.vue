@@ -24,7 +24,10 @@
             <source srcset="photos/minified/headshot@0.5x.jpg" />
             <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
-          <div>My name is Rob, and I like to party.</div>
+          <div>
+            My name is Rob, <br />
+            and I like to party.
+          </div>
         </section>
       </article>
 
@@ -148,7 +151,7 @@
             <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
 
             <div>
-              <input type="submit" value="Send" />
+              <button type="submit">Send Message</button>
             </div>
           </form>
         </section>
