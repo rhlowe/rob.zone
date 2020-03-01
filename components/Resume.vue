@@ -1,6 +1,6 @@
 <template>
   <ol>
-    <li v-for="job in jobsReverseSorted" :key="job.company" class="p-experience h-event">
+    <li v-for="job in jobsReverseSorted" :key="job.start_date" class="p-experience h-event">
       <span class="p-name">{{ job.role }}</span>
 
       <span class="h-card p-location">
@@ -8,10 +8,10 @@
         <span v-else>{{ job.company }}</span>
       </span>
 
-      <div class="duration">
+      <span class="duration">
         (<time class="dt-start" datetime="YYYY-MM">{{ job.start_date }}</time> to <time class="dt-end" datetime="YYYY-MM">{{ job.end_date }}</time
         >)
-      </div>
+      </span>
 
       <ul v-if="job.accomplishments.length" class="p-summary">
         <li v-for="a in job.accomplishments" :key="a">{{ a }}</li>
