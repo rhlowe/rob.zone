@@ -106,21 +106,31 @@
 
           <h3>Accomplishments</h3>
 
-          <ul>
-            <li>2020: Q2 Circle of Awesomeness - Culture Champion of the Year Finalist</li>
+          <ul class="p-0">
+            <li>
+              <h4>February 2020</h4>
+              Q2 Circle of Awesomeness - Culture Champion of the Year Finalist.
+            </li>
           </ul>
 
           <h3>Certifications</h3>
 
           <h4>Scrum Master Certified (SMC)</h4>
 
-          <ul>
+          <ul class="p-0">
             <li>
-              <a href="https://www.scrumalliance.org/community/profile/rlowe22"><img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" /> Certified ScrumMaster®</a>
+              <a class="d-f" href="https://www.scrumalliance.org/community/profile/rlowe22"><img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" width="128" height="128" /> <span>Certified ScrumMaster®</span></a>
             </li>
           </ul>
 
           <h3>Education</h3>
+          <ul class="p-0">
+            <li>
+              <h4>December 2005</h4>
+              Bachelor of Art, Computer Art - Multimedia Design. <br />
+              <a href="http://art.sf.edu/">University of Saint Francis School of Creative Arts</a>
+            </li>
+          </ul>
         </section>
       </article>
 
@@ -146,24 +156,6 @@ export default {
   components: {
     Resume,
   },
-  mounted() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const id = entry.target.id;
-        const element = document.querySelector(`nav a[href="#${id}"]`);
-        console.debug(entry);
-
-        if (entry.intersectionRatio > 0 && element) {
-          document.querySelector(`nav a[href="#${id}"]`).classList.add('active');
-        } else if (entry.intersectionRatio <= 0 && element) {
-          document.querySelector(`nav a[href="#${id}"]`).classList.remove('active');
-        }
-      });
-    });
-
-    document.querySelectorAll('article[id]').forEach((article) => {
-      observer.observe(article);
-    });
-  },
+  mounted() {},
 };
 </script>

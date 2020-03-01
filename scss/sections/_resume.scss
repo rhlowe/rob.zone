@@ -16,6 +16,12 @@
         .duration {
             grid-column: 1 / 2;
 
+            @media screen and (max-width: 481px) {
+                &:last-child {
+                    margin-bottom: 1rem;
+                }
+            }
+
             @media screen and (min-width: 481px) {
                 grid-column: 3 / 4;
                 grid-row: 1 / 2;
@@ -32,6 +38,7 @@
 
         .p-summary {
             grid-column: 1 / 4;
+            margin-bottom: .5rem;
 
             li {
                 list-style: square;
