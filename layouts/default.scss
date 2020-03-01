@@ -33,3 +33,24 @@
     --green: var(--cutty_sark);
     --pink: var(--trendy_pink);
 }
+
+.return_to_top {
+    background-color: var(--violet);
+    bottom: 1em;
+    display: none;
+    height: 64px;
+    right: 1em;
+    padding: .25em;
+    position: fixed;
+    width: 64px;
+    z-index: 10;
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        stroke: var(--white);
+    }
+}

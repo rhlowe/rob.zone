@@ -1,5 +1,7 @@
 <template>
   <div>
+    <a id="top" name="top"></a>
+
     <header class="bg-v t-w">
       <section>
         <h1>Rob Lowe</h1>
@@ -161,8 +163,15 @@
     <footer class="bg-v t-w">
       <section>
         <p class="ta-c">Copyright © Rob Lowe, {{ year }}.</p>
+        <p class="ta-c"><img src="https://api.netlify.com/api/v1/badges/7d1f69ac-1b55-4c45-b66b-5c8a488f53c2/deploy-status" alt="Netlify Status" /></p>
       </section>
     </footer>
+
+    <a href="#top" class="return_to_top" title="Return to Top">
+      <svg>
+        <use xlink:href="up.svg#up"></use>
+      </svg>
+    </a>
   </div>
 </template>
 
