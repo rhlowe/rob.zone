@@ -153,7 +153,9 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form action="/?submitted=true" method="POST" name="Contact" data-netlify="true" netlify>
+          <form action="/?submitted=true" method="POST" name="Contact" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact Form" />
+
             <label for="Name">Name</label>
             <input id="Name" type="text" name="Name" />
 
@@ -201,15 +203,15 @@ export default {
   mounted() {},
   methods: {
     closeMessage() {
-      console.info('closeMessage');
+      // console.info('closeMessage');
       document.querySelector('#thanks').setAttribute('aria-hidden', true);
     },
-    handleSubmit(form) {
-      console.info('handleSubmit', form);
-      document.querySelector('#thanks').setAttribute('aria-hidden', false);
-      window.location.hash = '';
-      window.scrollTo(0, 0);
-    },
+    // handleSubmit(form) {
+    //   console.info('handleSubmit', form);
+    //   document.querySelector('#thanks').setAttribute('aria-hidden', false);
+    //   window.location.hash = '';
+    //   window.scrollTo(0, 0);
+    // },
   },
 };
 </script>
