@@ -153,7 +153,7 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form action="/?submitted=true" method="POST" name="Contact" data-netlify="true">
+          <form action="?submitted=true" method="POST" name="Contact" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact Form" />
 
             <label for="Name">Name</label>
