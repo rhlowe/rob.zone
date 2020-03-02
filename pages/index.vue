@@ -153,7 +153,7 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form method="POST" name="Contact" netlify>
+          <form id="Contact" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
             <label for="Name">Name</label>
             <input name="Name" type="text" />
 
@@ -164,7 +164,7 @@
             <textarea name="Message" cols="30" rows="10"></textarea>
 
             <div>
-              <button type="submit">Send Message</button>
+              <button type="submit" name="Submit">Send Message</button>
             </div>
           </form>
         </section>

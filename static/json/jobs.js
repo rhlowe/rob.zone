@@ -52,7 +52,7 @@ const jobs = [
   {
     accomplishments: ['Primary Tech Stack: Angular 1.x/2, SCSS, Drupal, WordPress, Laravel, REST APIs.', 'Built Angular and Ember applications to interface with Java REST APIs.', 'Designed wire frames and mocks for new web app features and user interfaces.', 'Built an analytics web app using Laravel Framework.', 'Developed a JSON API using Drupal 7.', 'Managed and mentored junior developers.'],
     city: 'Austin',
-    company: 'W2O Group',
+    company: 'W2O Group (formerly VMFoundry)',
     end_date: '2016-04',
     role: 'Development Manager',
     start_date: '2012-09',
