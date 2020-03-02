@@ -153,17 +153,15 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form action="?submitted=true" method="POST" name="Contact" data-netlify="true">
-            <input type="hidden" name="form-name" value="Contact Form" />
-
+          <form method="POST" name="Contact" netlify>
             <label for="Name">Name</label>
-            <input id="Name" type="text" name="Name" />
+            <input name="Name" type="text" />
 
             <label for="Email">Email Address</label>
-            <input id="Email" type="email" name="Email" />
+            <input name="Email" type="email" />
 
             <label for="Message">Message</label>
-            <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
+            <textarea name="Message" cols="30" rows="10"></textarea>
 
             <div>
               <button type="submit">Send Message</button>
