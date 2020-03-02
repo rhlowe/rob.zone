@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a id="top" name="top"></a>
+    <a id="top" name="top" aria-hidden="true"></a>
 
     <header class="bg-v t-w">
       <section>
@@ -19,6 +19,17 @@
     </nav>
 
     <main>
+      <article id="thanks" aria-hidden="true">
+        <section>
+          <h2>Thanks!</h2>
+          <p>Thank you for contacting me, I will respond in short order.</p>
+          <p>❤️ Rob</p>
+          <form @submit.prevent="closeMessage">
+            <button>Close Message</button>
+          </form>
+        </section>
+      </article>
+
       <article id="intro" class="bg-p t-w">
         <section>
           <picture>
@@ -142,7 +153,7 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form method="POST" name="Contact" data-netlify="true">
+          <form @submit.prevent="handleSubmit" method="POST" name="Contact" data-netlify="true" netlify>
             <label for="Name">Name</label>
             <input id="Name" type="text" name="Name" />
 
@@ -188,5 +199,16 @@ export default {
     },
   },
   mounted() {},
+  methods: {
+    closeMessage() {
+      console.info('closeMessage');
+      document.querySelector('#thanks').setAttribute('aria-hidden', true);
+    },
+    handleSubmit() {
+      console.info('handleSubmit');
+      document.querySelector('#thanks').setAttribute('aria-hidden', false);
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>

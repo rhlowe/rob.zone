@@ -1,0 +1,13 @@
+#thanks {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 300ms;
+
+    &[aria-hidden="false"] {
+        max-height: 250px;
+    }
+
+    form {
+        margin: 1rem 0;
+    }
+}
