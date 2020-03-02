@@ -155,13 +155,13 @@
           <h2>Contact Me</h2>
           <form id="Contact" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
             <label for="Name">Name</label>
-            <input name="Name" type="text" />
+            <input id="Name" name="Name" type="text" />
 
             <label for="Email">Email Address</label>
-            <input name="Email" type="email" />
+            <input id="Email" name="Email" type="email" />
 
             <label for="Message">Message</label>
-            <textarea name="Message" cols="30" rows="10"></textarea>
+            <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
 
             <div>
               <button type="submit" name="Submit">Send Message</button>
