@@ -99,15 +99,15 @@
           <h2>Tech I ❤️ Right now</h2>
 
           <ul>
-            <li><img src="logos/minified/a11y-logo-hero.svg" alt="Accessibility" loading="lazy" /></li>
-            <li><img src="logos/minified/HTML5_logo_and_wordmark.svg" alt="HTML5 logo and wordmark" loading="lazy" /></li>
-            <li><img src="logos/minified/CSS3_logo_and_wordmark.svg" alt="CSS3 logo and wordmark" loading="lazy" /></li>
-            <li><img src="logos/minified/JavaScript-logo.png" alt="JavaScript logo" loading="lazy" /></li>
-            <li><img src="logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
-            <li><img src="logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
-            <li><img src="logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
-            <li><img src="logos/minified/python.svg" alt="Python" loading="lazy" /></li>
-            <li><img src="logos/minified/flask.svg" alt="Flask" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/a11y-logo-hero.svg" alt="Accessibility" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/HTML5_logo_and_wordmark.svg" alt="HTML5 logo and wordmark" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/CSS3_logo_and_wordmark.svg" alt="CSS3 logo and wordmark" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/JavaScript-logo.png" alt="JavaScript logo" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/python.svg" alt="Python" loading="lazy" /></li>
+            <li><lazy-img src="logos/minified/flask.svg" alt="Flask" loading="lazy" /></li>
           </ul>
         </section>
       </article>
@@ -135,7 +135,7 @@
 
           <ul class="p-0">
             <li>
-              <a class="d-f" href="https://www.scrumalliance.org/community/profile/rlowe22"><img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" width="128" height="128" /> <span>Certified ScrumMaster®</span></a>
+              <a class="d-f" href="https://www.scrumalliance.org/community/profile/rlowe22"><lazy-img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" width="128" height="128" /> <span>Certified ScrumMaster®</span></a>
             </li>
           </ul>
 
@@ -174,7 +174,7 @@
     <footer class="bg-v t-w">
       <section>
         <p class="ta-c">Copyright © Rob Lowe, {{ year }}.</p>
-        <p class="ta-c"><img src="https://api.netlify.com/api/v1/badges/7d1f69ac-1b55-4c45-b66b-5c8a488f53c2/deploy-status" alt="Netlify Status" /></p>
+        <p class="ta-c"><lazy-img src="https://api.netlify.com/api/v1/badges/7d1f69ac-1b55-4c45-b66b-5c8a488f53c2/deploy-status" alt="Netlify Status" /></p>
       </section>
     </footer>
 
@@ -187,6 +187,7 @@
 </template>
 
 <script>
+import LazyImg from '~/components/LazyImg.vue';
 import Resume from '~/components/Resume.vue';
 
 function encode(data) {
@@ -197,6 +198,7 @@ function encode(data) {
 
 export default {
   components: {
+    LazyImg,
     Resume,
   },
   data() {
@@ -236,7 +238,7 @@ export default {
           window.scrollTo(0, 0);
         })
         .catch((error) => {
-          console.error(error);
+          window.alert(error);
         });
     },
   },
