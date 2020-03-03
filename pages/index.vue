@@ -37,7 +37,7 @@
             <source type="image/jxr" srcset="photos/headshot.jxr" />
             <source type="image/webp" srcset="photos/headshot.webp" />
 
-            <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
+            <img src="photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
           <div>
             My name is Rob, <br />
