@@ -153,15 +153,15 @@
       <article id="contact">
         <section>
           <h2>Contact Me</h2>
-          <form id="Contact" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
+          <form id="Contact" v-on:submit.prevent="handleSubmit" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
             <label for="Name">Name</label>
-            <input id="Name" name="Name" type="text" />
+            <input id="Name" v-on:change="handleFormData" name="Name" type="text" />
 
             <label for="Email">Email Address</label>
-            <input id="Email" name="Email" type="email" />
+            <input id="Email" v-on:change="handleFormData" name="Email" type="email" />
 
             <label for="Message">Message</label>
-            <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
+            <textarea id="Message" v-on:change="handleFormData" name="Message" cols="30" rows="10"></textarea>
 
             <div>
               <button type="submit" name="Submit">Send Message</button>
@@ -189,9 +189,20 @@
 <script>
 import Resume from '~/components/Resume.vue';
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+}
+
 export default {
   components: {
     Resume,
+  },
+  data() {
+    return {
+      formData: {},
+    };
   },
   computed: {
     year() {
@@ -204,12 +215,30 @@ export default {
       // console.info('closeMessage');
       document.querySelector('#thanks').setAttribute('aria-hidden', true);
     },
-    // handleSubmit(form) {
-    //   console.info('handleSubmit', form);
-    //   document.querySelector('#thanks').setAttribute('aria-hidden', false);
-    //   window.location.hash = '';
-    //   window.scrollTo(0, 0);
-    // },
+    handleFormData(e) {
+      this.formData[e.target.name] = e.target.value;
+    },
+    handleSubmit(e) {
+      const form = e.target;
+      const submitData = {
+        'form-name': form.getAttribute('name'),
+        ...this.formData,
+      };
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode(submitData),
+      })
+        .then(() => {
+          document.querySelector('#thanks').setAttribute('aria-hidden', false);
+          window.location.hash = '';
+          window.scrollTo(0, 0);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
   },
 };
 </script>
