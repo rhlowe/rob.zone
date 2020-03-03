@@ -33,8 +33,10 @@
       <article id="intro" class="bg-p t-w">
         <section>
           <picture>
-            <source srcset="photos/minified/headshot.jpg" media="(min-width: 363px)" />
-            <source srcset="photos/minified/headshot@0.5x.jpg" />
+            <source type="image/jp2" srcset="photos/headshot.jp2" />
+            <source type="image/jxr" srcset="photos/headshot.jxr" />
+            <source type="image/webp" srcset="photos/headshot.webp" />
+
             <img src="photos/minified/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
           <div>
