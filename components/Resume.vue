@@ -15,7 +15,7 @@
         <time :datetime="job.end_date" class="dt-end">{{ formatDate(job.end_date) }}</time
         >,
         <em>
-          <time datetime="PnYnMnDTnHnMnS" class="dt-duration">{{ daysBetweenDates(job.start_date, job.end_date) }}</time>
+          <time :datetime="isoDuration(job.start_date, job.end_date)" class="dt-duration">{{ daysBetweenDates(job.start_date, job.end_date) }}</time>
         </em>
         )
       </span>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { format, formatDistance, parseISO } from 'date-fns';
+import { format, formatDistance, parseISO, formatISODuration, intervalToDuration } from 'date-fns';
 import jobs from 'static/json/jobs';
 
 export default {
@@ -56,6 +56,13 @@ export default {
         return formatDistance(parseISO(start), endDate);
       }
       return formatDistance(parseISO(start), parseISO(end));
+    },
+    isoDuration(start, end) {
+      const startDate = parseISO(start);
+      const endDate = end !== 'Present' ? parseISO(end) : new Date();
+      const duration = intervalToDuration({ start: startDate, end: endDate });
+
+      return formatISODuration(duration);
     },
   },
 };
