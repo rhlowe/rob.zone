@@ -29,7 +29,7 @@
 
 <script>
 import { format, formatDistance, parseISO, formatISODuration, intervalToDuration } from 'date-fns';
-import jobs from 'static/json/jobs';
+import jobs from '~/assets/json/jobs.js';
 
 export default {
   data() {

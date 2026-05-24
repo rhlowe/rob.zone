@@ -33,11 +33,11 @@
       <article id="intro" class="bg-p t-w">
         <section>
           <picture>
-            <source type="image/jp2" srcset="photos/headshot.jp2" />
-            <source type="image/jxr" srcset="photos/headshot.jxr" />
-            <source type="image/webp" srcset="photos/headshot.webp" />
+            <source type="image/jp2" srcset="/photos/headshot.jp2" />
+            <source type="image/jxr" srcset="/photos/headshot.jxr" />
+            <source type="image/webp" srcset="/photos/headshot.webp" />
 
-            <img src="photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
+            <img src="/photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
           </picture>
           <div>
             My name is Rob, <br />
@@ -61,28 +61,28 @@
           <ul class="flex-list">
             <li>
               <a href="https://www.linkedin.com/in/roberthenrylowe/">
-                <img src="social/minified/linkedin.svg" alt="LinkedIn Logo" class="svg-img" />
+                <img src="/social/minified/linkedin.svg" alt="LinkedIn Logo" class="svg-img" />
                 <span>in/roberthenrylowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://twitter.com/rhlowe">
-                <img src="social/minified/twitter.svg" alt="Twitter Logo" class="svg-img" />
+                <img src="/social/minified/twitter.svg" alt="Twitter Logo" class="svg-img" />
                 <span>@rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="https://github.com/rhlowe">
-                <img src="social/minified/github.svg" alt="Github Logo" class="svg-img" />
+                <img src="/social/minified/github.svg" alt="Github Logo" class="svg-img" />
                 <span>rhlowe</span>
               </a>
             </li>
 
             <li>
               <a href="mailto:rhlowe@gmail.com">
-                <img src="social/minified/email.svg" alt="Email Logo" class="svg-img" />
+                <img src="/social/minified/email.svg" alt="Email Logo" class="svg-img" />
                 <span>rhlowe@gmail.com</span>
               </a>
             </li>
@@ -101,15 +101,15 @@
           <h2>Tech I ❤️ Right now</h2>
 
           <ul>
-            <li><lazy-img src="logos/minified/a11y-logo-hero.svg" alt="Accessibility" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/HTML5_logo_and_wordmark.svg" alt="HTML5 logo and wordmark" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/CSS3_logo_and_wordmark.svg" alt="CSS3 logo and wordmark" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/JavaScript-logo.png" alt="JavaScript logo" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/python.svg" alt="Python" loading="lazy" /></li>
-            <li><lazy-img src="logos/minified/flask.svg" alt="Flask" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/a11y-logo-hero.svg" alt="Accessibility" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/HTML5_logo_and_wordmark.svg" alt="HTML5 logo and wordmark" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/CSS3_logo_and_wordmark.svg" alt="CSS3 logo and wordmark" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/JavaScript-logo.png" alt="JavaScript logo" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/ember_Tomster.png" alt="Ember Tomster" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/vuejs.svg" alt="Vue logo" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/React_logo.png" alt="React" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/python.svg" alt="Python" loading="lazy" /></li>
+            <li><app-lazy-img src="/logos/minified/flask.svg" alt="Flask" loading="lazy" /></li>
           </ul>
         </section>
       </article>
@@ -137,7 +137,7 @@
 
           <ul class="p-0">
             <li>
-              <a class="d-f" href="https://www.scrumalliance.org/community/profile/rlowe22"><lazy-img src="logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" width="128" height="128" /> <span>Certified ScrumMaster®</span></a>
+              <a class="d-f" href="https://www.scrumalliance.org/community/profile/rlowe22"><app-lazy-img src="/logos/minified/seal-csm.png" alt="Scrum Alliance Certified ScrumMaster® Seal" width="128" height="128" /> <span>Certified ScrumMaster®</span></a>
             </li>
           </ul>
 
@@ -176,20 +176,20 @@
     <footer class="bg-v t-w">
       <section>
         <p class="ta-c">Copyright © Rob Lowe, {{ year }}.</p>
-        <p class="ta-c"><lazy-img src="https://api.netlify.com/api/v1/badges/7d1f69ac-1b55-4c45-b66b-5c8a488f53c2/deploy-status" alt="Netlify Status" /></p>
+        <p class="ta-c"><app-lazy-img src="https://api.netlify.com/api/v1/badges/7d1f69ac-1b55-4c45-b66b-5c8a488f53c2/deploy-status" alt="Netlify Status" /></p>
       </section>
     </footer>
 
     <a href="#top" class="return_to_top" title="Return to Top">
       <svg>
-        <use xlink:href="up.svg#up"></use>
+        <use xlink:href="/up.svg#up"></use>
       </svg>
     </a>
   </div>
 </template>
 
 <script>
-import LazyImg from '~/components/LazyImg.vue';
+import AppLazyImg from '~/components/AppLazyImg.vue';
 import Resume from '~/components/Resume.vue';
 
 function encode(data) {
@@ -200,7 +200,7 @@ function encode(data) {
 
 export default {
   components: {
-    LazyImg,
+    AppLazyImg,
     Resume,
   },
   data() {
