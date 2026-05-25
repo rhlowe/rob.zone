@@ -1,15 +1,15 @@
-@import '~/assets/scss/atoms';
-@import '~/assets/scss/fonts';
-@import '~/assets/scss/tags';
+@use '../assets/scss/atoms';
+@use '../assets/scss/fonts';
+@use '../assets/scss/tags';
 
-@import '~/assets/scss/sections/about';
-@import '~/assets/scss/sections/contact';
-@import '~/assets/scss/sections/intro';
-@import '~/assets/scss/sections/nav';
-@import '~/assets/scss/sections/resume';
-@import '~/assets/scss/sections/skills';
-@import '~/assets/scss/sections/social';
-@import '~/assets/scss/sections/thanks';
+@use '../assets/scss/sections/about';
+@use '../assets/scss/sections/contact';
+@use '../assets/scss/sections/intro';
+@use '../assets/scss/sections/nav';
+@use '../assets/scss/sections/resume';
+@use '../assets/scss/sections/skills';
+@use '../assets/scss/sections/social';
+@use '../assets/scss/sections/thanks';
 
 /*
     White: #F4F4F9
@@ -20,38 +20,38 @@
     https://coolors.co/000000-f4f4f9-3cf4b5-ff3366-503a53
 */
 :root {
-    --black: #000000;
-    // --white: #f4f4f9;
+  --black: #000000;
+  // --white: #f4f4f9;
 
-    --trendy_pink: #9B60A1;
-    --barley_white: #FFF2CC;
-    --voodoo: #523B54;
-    --cutty_sark: #51877A;
-    --patina: #68A193;
+  --trendy_pink: #9b60a1;
+  --barley_white: #fff2cc;
+  --voodoo: #523b54;
+  --cutty_sark: #51877a;
+  --patina: #68a193;
 
-    --white: var(--barley_white);
-    --violet: var(--voodoo);
-    --green: var(--cutty_sark);
-    --pink: var(--trendy_pink);
+  --white: var(--barley_white);
+  --violet: var(--voodoo);
+  --green: var(--cutty_sark);
+  --pink: var(--trendy_pink);
 }
 
 .return_to_top {
-    background-color: var(--violet);
-    bottom: 1em;
-    display: none;
-    height: 64px;
-    right: 1em;
-    padding: .25em;
-    position: fixed;
-    width: 64px;
-    z-index: 10;
+  background-color: var(--violet);
+  bottom: 1em;
+  display: none;
+  height: 64px;
+  right: 1em;
+  padding: 0.25em;
+  position: fixed;
+  width: 64px;
+  z-index: 10;
 
-    svg {
-        height: 100%;
-        width: 100%;
-    }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
 
-    img {
-        stroke: var(--white);
-    }
+  img {
+    stroke: var(--white);
+  }
 }
