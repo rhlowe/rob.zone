@@ -34,7 +34,7 @@
         <section>
           <picture>
             <source type="image/jp2" srcset="/photos/headshot.jp2" />
-            <source type="image/jxr" srcset="/photos/headshot.jxr" />
+            <!-- <source type="image/jxr" srcset="/photos/headshot.jxr" /> -->
             <source type="image/webp" srcset="/photos/headshot.webp" />
 
             <img src="/photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
@@ -63,13 +63,6 @@
               <a href="https://www.linkedin.com/in/roberthenrylowe/">
                 <img src="/social/minified/linkedin.svg" alt="LinkedIn Logo" class="svg-img" />
                 <span>in/roberthenrylowe</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/rhlowe">
-                <img src="/social/minified/twitter.svg" alt="Twitter Logo" class="svg-img" />
-                <span>@rhlowe</span>
               </a>
             </li>
 
