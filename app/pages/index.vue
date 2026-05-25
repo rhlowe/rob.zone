@@ -14,27 +14,14 @@
         <li><a href="#social">Social</a></li>
         <li><a href="#tech">❤️ Tech</a></li>
         <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <main>
-      <article id="thanks" aria-hidden="true">
-        <section>
-          <h2>Thanks!</h2>
-          <p>Thank you for contacting me, I will respond in short order.</p>
-          <p>❤️ Rob</p>
-          <form @submit.prevent="closeMessage">
-            <button>Close Message</button>
-          </form>
-        </section>
-      </article>
-
       <article id="intro" class="bg-p t-w">
         <section>
           <picture>
             <source type="image/jp2" srcset="/photos/headshot.jp2" />
-            <!-- <source type="image/jxr" srcset="/photos/headshot.jxr" /> -->
             <source type="image/webp" srcset="/photos/headshot.webp" />
 
             <img src="/photos/headshot.jpg" alt="Photograph of Rob Lowe's head and shoulders. He is wearing a dark grey shirt, blue glasses, and a beard. The background is blurry, however a white wall and blue ceiling are recognizable." height="725" width="725" />
@@ -144,26 +131,6 @@
           </ul>
         </section>
       </article>
-
-      <!-- <article id="contact">
-        <section>
-          <h2>Contact Me</h2>
-          <form id="Contact" v-on:submit.prevent="handleSubmit" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
-            <label for="Name">Name</label>
-            <input id="Name" v-on:change="handleFormData" name="Name" type="text" />
-
-            <label for="Email">Email Address</label>
-            <input id="Email" v-on:change="handleFormData" name="Email" type="email" />
-
-            <label for="Message">Message</label>
-            <textarea id="Message" v-on:change="handleFormData" name="Message" cols="30" rows="10"></textarea>
-
-            <div>
-              <button type="submit" name="Submit">Send Message</button>
-            </div>
-          </form>
-        </section>
-      </article> -->
     </main>
 
     <footer class="bg-v t-w">
@@ -207,35 +174,6 @@ export default {
     },
   },
   mounted() {},
-  methods: {
-    closeMessage() {
-      // console.info('closeMessage');
-      document.querySelector('#thanks').setAttribute('aria-hidden', true);
-    },
-    handleFormData(e) {
-      this.formData[e.target.name] = e.target.value;
-    },
-    handleSubmit(e) {
-      const form = e.target;
-      const submitData = {
-        'form-name': form.getAttribute('name'),
-        ...this.formData,
-      };
-
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode(submitData),
-      })
-        .then(() => {
-          document.querySelector('#thanks').setAttribute('aria-hidden', false);
-          window.location.hash = '';
-          window.scrollTo(0, 0);
-        })
-        .catch((error) => {
-          window.alert(error);
-        });
-    },
-  },
+  methods: {},
 };
 </script>
