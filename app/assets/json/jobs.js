@@ -7,7 +7,7 @@ const jobs = [
     role: 'Senior Software Developer',
     start_date: '2021-02',
     state: 'Missouri',
-    tech: ['React'],
+    tech: ['React', 'Jest', 'GraphQL', 'ExpressJS', 'Node', 'pnpm', 'monorepos', 'Git', 'Figma', 'Storybook', 'Redux'],
     url: 'https://www.payitgov.com/',
   },
   {
