@@ -152,12 +152,6 @@
 import AppLazyImg from '~/components/AppLazyImg.vue';
 import Resume from '~/components/Resume.vue';
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&');
-}
-
 export default {
   components: {
     AppLazyImg,

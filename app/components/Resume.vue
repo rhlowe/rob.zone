@@ -1,6 +1,6 @@
 <template>
   <ol>
-    <li v-for="job in jobsReverseSorted" :key="job.start_date" class="p-experience h-event">
+    <li v-for="job in jobsReverseSorted" :key="job.end_date" class="p-experience h-event">
       <h4 class="p-name">{{ job.role }}</h4>
 
       <span class="h-card p-location">
