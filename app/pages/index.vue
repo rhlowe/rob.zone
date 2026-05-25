@@ -145,7 +145,7 @@
         </section>
       </article>
 
-      <article id="contact">
+      <!-- <article id="contact">
         <section>
           <h2>Contact Me</h2>
           <form id="Contact" v-on:submit.prevent="handleSubmit" method="POST" name="Contact" enctype="application/x-www-form-urlencoded" data-netlify="true">
@@ -163,7 +163,7 @@
             </div>
           </form>
         </section>
-      </article>
+      </article> -->
     </main>
 
     <footer class="bg-v t-w">
