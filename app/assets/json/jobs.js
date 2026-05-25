@@ -1,9 +1,19 @@
 const jobs = [
   {
+    accomplishments: ['Partnered with Product and Design leadership to define technical roadmaps and scope features for a platform serving more than 2.5 million monthly active users', 'Mentored multiple junior developers and interns, leading to increased team velocity and a successful promotion to Senior Product Owner', 'Maintained a centralized React component library using Storybook, reducing UI development time across four product teams', 'Led Post-Mortem and Incident Response meetings for critical production issues, implementing preventative measures that eliminated tenant downtime errors', 'Authored comprehensive RFCs (Request for Comments) for high-impact features, ensuring architectural alignment and cross-team buy-in before implementation', 'Led the end-to-end development of a high-performance UI library for the shopping cart experience, resulting a smoother user journey and responsible for $500 million in revenue across 1 million transactions monthly'],
+    city: 'Kansas City',
+    company: 'PayIt, LLC',
+    end_date: 'Present',
+    role: 'Senior Software Developer',
+    start_date: '2021-02',
+    state: 'Missouri',
+    url: 'https://www.payitgov.com/',
+  },
+  {
     accomplishments: ['Primary Tech Stack: EmberJS, QUnit, SCSS, REST APIs.', 'Implemented and wrote QUnit tests for new Billpay feature'],
     city: 'Austin',
     company: 'Q2eBanking',
-    end_date: 'Present',
+    end_date: '2021-02',
     role: 'Senior Software Developer / Team Lead - Billpay',
     start_date: '2019-11',
     state: 'Texas',
